@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Italianno&family=Lato:wght@400;700;900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="build/css/app.css">
 </head>
 <body>
@@ -51,10 +52,16 @@
         </div>
     </div>
 
-    <section class="slider">
+    <section class="slider container">
         <ul class="slider__container">
             <li class="slider__slide">
-                <img src="build/img/slide_01.jpg" alt="slide">
+                <img class="slider__image" src="build/img/slide_01.jpg" alt="slide">
+            </li>
+            <li class="slider__slide">
+                <img class="slider__image" src="build/img/slide_02.jpg" alt="slide">
+            </li>
+            <li class="slider__slide">
+                <img class="slider__image" src="build/img/slide_03.jpg" alt="slide">
             </li>
         </ul>
     </section>
@@ -141,7 +148,7 @@
                         <tr class="table__tr">
                             <td class="table__td">Sabado</td>
                             <td class="table__td">09:00</td>
-                            <td class="table__td">19:00</td>
+                            <td class="table__td">14:00</td>
                         </tr>
 
                         <tr class="table__tr">
@@ -153,6 +160,111 @@
             </div>
         </div>
     </section>
+    
+    <main class="products container section">
+        <h2 class="products__heading">Nuestros<span>productos</span></h2>
+        <div class="products__grid">
 
+            <div class="product">
+                <div class="product__mask">
+                    <img class="product__image" src="build/img/producto_01.jpg" alt="product image">
+                </div>
+                <div class="product__content">
+                        <h3 class="product__name">Producto 1</h3>
+                        <p class="product__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur laboriosam ea expedita?</p>
+                        <p class="product__price">$25</p>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="product__mask">
+                    <img class="product__image" src="build/img/producto_02.jpg" alt="product image">
+                </div>
+                <div class="product__content">
+                        <h3 class="product__name">Producto 2</h3>
+                        <p class="product__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur laboriosam ea expedita?</p>
+                        <p class="product__price">$25</p>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="product__mask">
+                    <img class="product__image" src="build/img/producto_03.jpg" alt="product image">
+                </div>
+                <div class="product__content">
+                        <h3 class="product__name">Producto 3</h3>
+                        <p class="product__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur laboriosam ea expedita?</p>
+                        <p class="product__price">$25</p>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="product__mask">
+                    <img class="product__image" src="build/img/producto_04.jpg" alt="product image">
+                </div>
+                <div class="product__content">
+                        <h3 class="product__name">Producto 4</h3>
+                        <p class="product__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur laboriosam ea expedita?</p>
+                        <p class="product__price">$25</p>
+                </div>
+            </div>
+
+
+        </div>
+    </main>
+
+    <section class="appointment">
+        <h2 class="appointment__heading">Realiza una cita</h2>
+        <p class="appointment__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque laboriosam iusto dolores. Praesentium delectus nobis dolores nisi repudiandae voluptatibus magnam quibusdam similique libero facere. Vitae suscipit possimus ipsum sed rem!</p>
+    
+        <a href="#" class="appointment__link">Leer más</a>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__grid container">
+            <div class="footer__widget">
+                <h3 class="footer__heading">Nosotros</h3>
+                <p class="footer__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ipsum quis eius asperiores velit, tempore ab consequuntur. Nesciunt, ipsum.</p>
+            </div>
+
+            <div class="footer__widget">
+                <h3 class="footer__heading">Horario</h3>
+                <p class="footer__text">Lun-Vie: 9AM - 7PM</p>
+                <p class="footer__text">Sábado: 9AM - 2PM</p>
+                <p class="footer__text">Domingo: Cerrado</p>
+            </div>
+           
+            <div class="footer__widget">
+                <h3 class="footer__heading">Contacto</h3>
+                <p class="footer__text">Avda. Giannattasio 9999</p>
+
+                <nav class="socials">
+                    <a class="socials__link" href="https://facebook.com">
+                        <span class="socials__access">Facebook</span>
+                    </a>
+                    <a class="socials__link" href="https://twitter.com">
+                        <span class="socials__access">Twitter</span>
+                    </a>
+                    <a class="socials__link" href="https://instagram.com">
+                        <span class="socials__access">Instagram</span>
+                    </a>
+                    <a class="socials__link" href="https://pinterest.com">
+                        <span class="socials__access">Pinterest</span>
+                    </a>
+                    <a class="socials__link" href="https://youtube.com">
+                        <span class="socials__access">Youtube</span>
+                    </a>
+                    <a class="socials__link" href="https://tiktok.com">
+                        <span class="socials__access">Tiktok</span>
+                    </a>
+                </nav>
+            </div>
+        </div>
+
+        <p class="footer__copyright">&copy; Carolina Spa & Salon. Todos los derechos reservados</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>

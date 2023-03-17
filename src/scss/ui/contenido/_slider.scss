@@ -1,0 +1,26 @@
+@use 'base/variables' as v;
+
+.slider {
+    overflow: hidden;
+    position: relative;
+
+    &__slide {
+        height: 100%;
+        flex-shrink: 0;
+        width: 100%;
+        position: relative;
+        transition-property: transform;
+    }
+
+    &__image {
+        width: 100%;
+    }
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: blueviolet;
+    background-color: aliceblue;
+    opacity: 0.5;
+    padding: 4rem 2rem;
+}
