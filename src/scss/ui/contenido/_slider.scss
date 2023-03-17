@@ -19,8 +19,10 @@
 
 .swiper-button-next,
 .swiper-button-prev {
-    color: blueviolet;
-    background-color: aliceblue;
-    opacity: 0.5;
+    color: v.$white;
     padding: 4rem 2rem;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: v.$white;
 }
