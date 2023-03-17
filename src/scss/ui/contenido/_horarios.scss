@@ -2,6 +2,37 @@
 @use 'base/variables' as v;
 
 .schedule {
-        background-color: aqua;
-        text-transform: uppercase;
+        background-image: linear-gradient( to bottom, v.$primary 0%, v.$primary 50%, transparent 50%), url(../img/bg_horarios.jpg);
+        background-repeat: no-repeat;
+        background-position: center, bottom center;
+        color: v.$white;
+
+        @include m.tablet {
+                background-image: linear-gradient( to right, v.$primary 0%, v.$primary 50%, transparent 50%), url(../img/bg_horarios.jpg);
+                background-position: center, top right;
+        }
+
+        &__grid {
+                display: grid;
+                grid-template-rows: repeat(2, 1fr);
+
+                @include m.tablet {
+                        grid-template-rows: unset;
+                        @include m.grid (2, 5rem);
+                }
+        }
+
+        &__content {
+                padding: 5rem 0;
+        }
+
+        &__heading {
+                @include m.heading;
+        }
+
+        &__text {
+                font-size: 2.2rem;
+                line-height: 1.8;
+                text-align: center;
+        }
 }
