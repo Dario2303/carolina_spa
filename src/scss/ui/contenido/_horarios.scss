@@ -2,9 +2,6 @@
 @use 'base/variables' as v;
 
 .schedule {
-    // background-image: linear-gradient( to bottom, v.$primary 0%, v.$primary 50%, transparent 50%), url(../img/bg_horarios.jpg);
-    background-repeat: no-repeat;
-    background-position: center, bottom center;
-    color: v.$white;
-    background-color: aqua;
+        background-color: aqua;
+        text-transform: uppercase;
 }
